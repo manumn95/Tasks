@@ -9,7 +9,7 @@ xhr.onload = function()
    let countries = JSON.parse(xhr.responseText);
    for(let index in Object.keys(countries))
    {
-    console.log("Country Code:" +countries[index].flag);
+    console.log("Flag Code:" +countries[index].flag);
     console.log("png file:" +countries[index].flags['png']);
     console.log("svg file:" +countries[index].flags['svg']);
     console.log('--------------------------------------------------');
